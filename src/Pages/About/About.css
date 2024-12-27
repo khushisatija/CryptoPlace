@@ -1,0 +1,139 @@
+.about-container {
+  
+  padding: 30px; /* Reduced size */
+  margin: 50px auto;
+  max-width: 900px;
+  text-align: center;
+/* background:: #96888898;  Light background color */
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; /* Subtle animation on hover */
+}
+
+.about-container:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
+.about-heading {
+  font-size: 2.5rem; /* Reduced heading size */
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.about-content {
+  display: flex; /* Flexbox for left-right layout */
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #e2e3e4; /* Dark text for better readability */
+  
+  background: linear-gradient(#233e41, #14413e, #002834);
+
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  font-weight: 400;
+  position: relative;
+  animation: fadeIn 1s ease-out; /* Fade-in effect */
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+
+.about-content p:last-child {
+  margin-bottom: 0; /* No bottom margin for the last paragraph */
+}
+
+.about-content::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #896bba; /* Accent line */
+  position: absolute;
+  top: -20px; /* Position it above the content */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-image-container {
+  flex: 0 0 180px; /* Fixed size for the image container */
+  margin-right: 20px; /* Space between image and content */
+}
+
+.profile-image {
+  width: 250px; /* Adjust image size */
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #484848b0; /* Optional border around the image */
+}
+
+.text-content {
+  flex: 1; /* Take up the remaining space */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 30px;
+  }
+
+  .about-heading {
+    font-size: 2.2rem;
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack image and text vertically on smaller screens */
+    text-align: center;
+  }
+
+  .profile-image-container {
+    margin-right: 0;
+    margin-bottom: 20px; /* Add space below the image */
+  }
+
+  .profile-image {
+    width: 150px; /* Adjust image size on smaller screens */
+    height: 150px;
+  }
+
+  .text-content {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .profile-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .text-content {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+}
