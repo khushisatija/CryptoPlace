@@ -17,7 +17,7 @@ const Features = () => {
         <div className="feature-item">
           <FaDollarSign className="feature-icon" />
           <h3>Current Price</h3>
-          <p>View the current price of cryptocurrencies in your chosen currency (USD, INR, EUR, etc.).</p>
+          <p>View the current price of cryptocurrencies in your chosen currency (USD, INR, EUR).</p>
         </div>
 
         <div className="feature-item">

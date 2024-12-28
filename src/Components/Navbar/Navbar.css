@@ -76,7 +76,11 @@
     }
 
     .navbar ul{
-        display: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
     }
     
     .navbar button img{

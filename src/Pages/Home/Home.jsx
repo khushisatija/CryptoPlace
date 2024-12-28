@@ -157,10 +157,10 @@ useEffect(() => {
         <div className="table-layout">
           <p>#</p>
           <p>Coins</p>
-          <p>Price</p>
-          <p style={{ textAlign: 'center' }}>24H Change</p>
-          <p className="market-cap" style={{ textAlign: 'center' }}>Market Cap</p>
-          <p style={{ textAlign: 'center' }}>Action</p>
+          <p className='price-heading'>Price</p>
+          <p className='h24-heading'>24H Change</p>
+          <p className="market-cap" >Market Cap</p>
+          <p  className='action-heading'>Action</p>
         </div>
 
         {displayCoin.length === 0 ? (
@@ -182,7 +182,7 @@ useEffect(() => {
                 </p>
               </Link>
               <Link to={`/coin/${item.id}`}>
-                <p
+                <p id="24h-change"
                   className={item.price_change_percentage_24h > 0 ? 'green' : 'red'}
                   style={{ textAlign: 'center' }}
                 >

@@ -25,6 +25,13 @@
     line-height: 1.5;
 }
 
+.h24-heading{
+    text-align: center;
+}
+
+.action-heading{
+    text-align: center;
+}
 .hero form{
     padding: 8px;
     width: 80%;
@@ -134,18 +141,30 @@
     background-color: #0056b3;
   }
 
+  
+
   @media (max-width: 768px){
     .table-layout{
-        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+        grid-template-columns: 0.5fr 2.5fr 1fr 0.8fr 0 0.8fr;
     }
 
     .market-cap{
         display: none;
     }
 
-    .action-button{
-        display: none;
+    .price-heading{
+        text-align: left;
     }
+
+    .action-heading{
+     padding-left: 10px;
+    }
+  
+    .action-button{
+        margin-left: 10px;
+    }
+
+
   }
   
   @media (max-width: 500px){
