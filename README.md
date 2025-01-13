@@ -30,7 +30,7 @@ CryptoPlace reflects my passion for modern front-end technologies like **React J
 ## 🌟 How to Use  
 1. Clone the repository
    ```bash
-   git clone https://github.com/khushisatija/cryptoplace.git
+   git clone https://github.com/khushisatija/CryptoPlace.git
    ```  
 2. Install dependencies:  
    ```bash
