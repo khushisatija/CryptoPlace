@@ -22,7 +22,7 @@ CryptoPlace reflects my passion for modern front-end technologies like **React J
 ## 🛠️ Built With  
 - **React JS**  
 - **RESTful APIs** for real-time cryptocurrency data  
-- **CSS/SCSS** for modern, responsive design  
+- **CSS** for modern, responsive design  
 - **JavaScript** for interactive functionality  
 
 ---
